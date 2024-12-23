@@ -1,12 +1,17 @@
 import "./App.css";
+import Charts from "./components/Charts/Charts";
 import CustomizedNavBar from "./components/CustomizedNavBar/CustomizedNavBar";
-import Navbar from "./components/Navbar/Navbar";
+import PriceOption from "./components/priceOption/priceOption";
+
+
 
 function App() {
   return (
     <>
-  {/* <Navbar></Navbar> */}
+
   <CustomizedNavBar></CustomizedNavBar>
+  <PriceOption></PriceOption>
+ <Charts></Charts>
       
     </>
   );

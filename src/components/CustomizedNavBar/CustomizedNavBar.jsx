@@ -36,14 +36,14 @@ const [open, setOpen] = useState(false);
 
 
   return <nav>
-    <div className="text-3xl md:hidden" onClick={()=> setOpen(!open)}>
+    <div className="text-3xl md:hidden  " onClick={()=> setOpen(!open)}>
       {
         open === true ? <IoMdClose /> : < IoMenuOutline/> 
       }
     
     </div>
 
-   <ul className={`md:flex absolute duration-100 ${open ? '' : 'hidden'}`}> 
+   <ul className={`md:flex absolute duration-100 bg-yellow-200 w-full text-black `}> 
    {
         routes.map(route=> <CustomizedLinks key={route.id} route={route}></CustomizedLinks>)
     }
